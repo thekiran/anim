@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/animated-Beauty/static/css/main.1eb61730.chunk.css",
+    "main.js": "/animated-Beauty/static/js/main.8cfbd976.chunk.js",
+    "main.js.map": "/animated-Beauty/static/js/main.8cfbd976.chunk.js.map",
+    "runtime-main.js": "/animated-Beauty/static/js/runtime-main.a167fcac.js",
+    "runtime-main.js.map": "/animated-Beauty/static/js/runtime-main.a167fcac.js.map",
+    "static/js/2.58619460.chunk.js": "/animated-Beauty/static/js/2.58619460.chunk.js",
+    "static/js/2.58619460.chunk.js.map": "/animated-Beauty/static/js/2.58619460.chunk.js.map",
+    "index.html": "/animated-Beauty/index.html",
+    "static/css/main.1eb61730.chunk.css.map": "/animated-Beauty/static/css/main.1eb61730.chunk.css.map",
+    "static/js/2.58619460.chunk.js.LICENSE.txt": "/animated-Beauty/static/js/2.58619460.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/animated-Beauty/static/media/darbg.3c3c841c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a167fcac.js",
+    "static/js/2.58619460.chunk.js",
+    "static/css/main.1eb61730.chunk.css",
+    "static/js/main.8cfbd976.chunk.js"
+  ]
+}
