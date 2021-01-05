@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { motion } from 'framer-motion'
 import gsap from 'gsap'
 
 const Content = () => {
@@ -16,7 +17,7 @@ const Content = () => {
                 scrub: true,
                 snap: 1 / (sections.length - 1),
                 // base vertical scrolling on how wide the container is so it feels more natural.
-                end: () => "+=" + document.querySelector(".pins").offsetWidth
+                end: () => "+=" + 500//document.querySelector(".pins").offsetWidth 
             }
             });
 
@@ -27,21 +28,15 @@ const Content = () => {
             {/* <!-- Content --&gt; */}
             <section id="content">
                 <div className="container">
-                    <div className="row pins" >
+                    <motion.div //drag 
+                    // dragConstraints={{ 
+                    // top: -0,
+                    // left: -1200,
+                    // right: 20,
+                    // bottom: 0}}
+       className="row pins" >
                         <div className="col-4 col-12-medium pin pin1">
                             {/* // Box #1 */}
-                            {/* <section>
-                                <header>
-                                    <h2>Who We Are</h2>
-                                    <h3>A subheading about who we are</h3>
-                                </header>
-                                <button className="feature-image"><img src="images/pic05.jpg" alt="imag" /></button>
-                                <p>
-                                    Duis neque nisi, dapibus sed mattis quis, rutrum accumsan magna sed.
-                                    Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis
-                                    justo facilisis quis. Sed sagittis amet lorem ipsum.
-            </p>
-                            </section> */}
                             <section>
                                 <header>
                                     <h2>What We Do</h2>
@@ -82,11 +77,23 @@ const Content = () => {
                                 </ul>
                             </section>
                         </div>
-                        {/* <div className="col-4 col-6-medium col-12-small pin pin3"> */}
+                        <div className="col-4 col-6-medium col-12-small pin pin3">
                             {/* Box #3 */}
                             {/* <section /> */}
-                        {/* </div> */}
-                    </div>
+                             <section>
+                                <header>
+                                    <h2>Who We Are</h2>
+                                    <h3>A subheading about who we are</h3>
+                                </header>
+                                <button className="feature-image"><img src="images/pic05.jpg" alt="imag" /></button>
+                                <p>
+                                    Duis neque nisi, dapibus sed mattis quis, rutrum accumsan magna sed.
+                                    Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis
+                                    justo facilisis quis. Sed sagittis amet lorem ipsum.
+            </p>
+                            </section>
+                        </div>
+                    </motion.div>
                 </div>
             </section>
         </React.Fragment>

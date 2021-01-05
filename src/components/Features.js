@@ -3,24 +3,26 @@ import React from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 
-
+import slack from '../imglg/slacklg.jpg'
+import hors from '../imglg/horslg.jpg'
+import cof from '../imglg/coflg.jpg'
 
 const Features = () => {
   React.useEffect(()=>{
-    let proxy = { skew: 0 },
-    skewSetter = gsap.quickSetter(".bordered-feature-image", "skewY", "deg"), // fast
-    clamp = gsap.utils.clamp(-15, 15); // don't let the skew go beyond 20 degrees. 
+    // let proxy = { skew: 0 },
+    // skewSetter = gsap.quickSetter(".bordered-feature-image", "skewY", "deg"), // fast
+    // clamp = gsap.utils.clamp(-15, 15); // don't let the skew go beyond 20 degrees. 
  
-    ScrollTrigger.create({
-      onUpdate: (self) => {
-        let skew = clamp(self.getVelocity() / -300);
-        // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
-        if (Math.abs(skew) > Math.abs(proxy.skew)) {
-          proxy.skew = skew;
-          gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
-        }
-      }
-    });
+    // ScrollTrigger.create({
+    //   onUpdate: (self) => {
+    //     let skew = clamp(self.getVelocity() / -300);
+    //     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+    //     if (Math.abs(skew) > Math.abs(proxy.skew)) {
+    //       proxy.skew = skew;
+    //       gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+    //     }
+    //   }
+    // });
 
     // make the right edge "stick" to the scroll bar. force3D: true improves performance
     //gsap.set(".skew-on-scroll", {transformOrigin: "right center", force3D: true});
@@ -36,7 +38,7 @@ const Features = () => {
       <div className="col-3 col-6-medium col-12-small">
         {/* Feature #1 */}
         <section>
-          <a href="/" className="bordered-feature-image"><img className="skew-on-scroll" src="/images/pic01.jpg" alt="imag" /></a>
+          <a href="/" className="bordered-feature-image"><img className="skew-on-scroll" src={slack} alt="imag" /></a>
           <h2>Welcome to Halcyonic</h2>
           <p>
             This is <strong>Halcyonic</strong>, a free site template
@@ -49,7 +51,7 @@ const Features = () => {
       <div className="col-3 col-6-medium col-12-small">
         {/* Feature #2 */}
         <section>
-          <a href="/" className="bordered-feature-image"><img src="/images/pic02.jpg" className="skew-on-scroll" alt="imag" /></a>
+          <a href="/" className="bordered-feature-image"><img src={hors} className="skew-on-scroll" alt="imag" /></a>
           <h2>Responsive You Say?</h2>
           <p>
             Yes! Halcyonic is built to be fully responsive so it looks great
@@ -60,7 +62,7 @@ const Features = () => {
       <div className="col-3 col-6-medium col-12-small">
         {/* Feature #3 */}
         <section>
-          <a href="/" className="bordered-feature-image"><img src="/images/pic03.jpg" className="skew-on-scroll" alt="imag" /></a>
+          <a href="/" className="bordered-feature-image"><img src={cof} className="skew-on-scroll" alt="imag" /></a>
           <h2>License Info</h2>
           <p>
             Halcyonic is licensed under the <a href="http://html5up.net/license">CCA</a> license,
@@ -72,7 +74,7 @@ const Features = () => {
       <div className="col-3 col-6-medium col-12-small">
         {/* Feature #4 */}
         <section>
-          <a href="/" className="bordered-feature-image"><img src="/images/pic04.jpg" className="skew-on-scroll" alt="imag" /></a>
+          <a href="/" className="bordered-feature-image"><img src="/images/pic04.jpg" className="skew-on-scroll" alt="Suspendisse" /></a>
           <h2>Volutpat etiam aliquam</h2>
           <p>
             Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse

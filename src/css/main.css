@@ -1457,17 +1457,40 @@ input, select, textarea {
 
 	.bordered-feature-image {
 		display: block;
-		background: #000 url("images/bg04.png");
-		padding: 10px;
+		/* background: #000 url("images/bg04.png"); */
+		padding: 5px;
 		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
 		margin: 0 0 1.5em 0;
 		outline: 0;
 	}
 
+		.bordered-feature-image img.hero {
+			display: block;
+			width: 100%;
+			height: 250px;
+			object-fit: contain;
+			margin: 1.5em 0em 0 1.5em;
+			padding: 0 1em 0 0;
+			border-radius: 0%;
+
+				cursor: move; /* fallback if grab cursor is unsupported */
+				cursor: grab;
+				cursor: -moz-grab;
+				cursor: -webkit-grab;
+		
+		}
 		.bordered-feature-image img {
 			display: block;
 			width: 100%;
-			height: 150px;
+			height: 100%;
+			object-fit: contain;
+			margin: 0 0em;
+			border-radius: 20%;
+				/* cursor: move; fallback if grab cursor is unsupported */
+				/* cursor: grab;
+				cursor: -moz-grab;
+				cursor: -webkit-grab; */
+		
 		}
 
 	.button-large {
@@ -1656,18 +1679,22 @@ input, select, textarea {
 	#footer {
 		padding: 45px 0 45px 0;
 		text-shadow: 1px 1px 1px white;
-		color: #546b76;
-		text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+		/* color: #546b76; */
+		color: rgb(0, 0, 0);
+		/* text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5); */
+		text-shadow: 1px 1px 0px rgb(0, 0, 0);
 	}
 
 		#footer h2 {
 			font-size: 1.25em;
-			color: #212f35;
+			/* color: #212f35; */
+		color: inherit;
 			margin: 0 0 1em 0;
 		}
 
 		#footer a {
-			color: #546b76;
+			/* color: #546b76; */
+		color: inherit;
 		}
 
 		#footer .quote-list li {

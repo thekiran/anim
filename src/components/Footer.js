@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <React.Fragment>
-            <section id="footer">
+            <section style={{background:'rgba(0,0,0,0.1)'}} id="footer">
                 <div className="container">
                     <div className="row">
                         <div className="col-8 col-12-medium">

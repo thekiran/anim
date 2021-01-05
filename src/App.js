@@ -4,10 +4,11 @@ import Home from './pages/home'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 
+
 import './App.css';
 
 const App = () => {
-  gsap.registerPlugin(ScrollTrigger)
+  // gsap.registerPlugin(ScrollTrigger)
   React.useEffect(()=>{
     // const link = document.createElement('link')
     // <link rel="stylesheet" href="/css/main.css">

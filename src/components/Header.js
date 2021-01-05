@@ -1,8 +1,11 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+
+import banner from '../images/cam.jpg'
 
 const Header = () => {
     return (
-<section id="header">
+<section style={{background:'rgba(0,0,0,0)'}} id="header">
   <div className="container">
     <div className="row">
       <div className="col-12">
@@ -29,7 +32,10 @@ const Header = () => {
         </div>
         <div className="col-6 col-12-medium imp-medium">
           {/* Banner Image */}
-          <a href="/" className="bordered-feature-image"><img src="/images/banner.jpg" alt="imag" /></a>
+          <button style={{margin:'0px 5px 5px 150px'}} className="bordered-feature-image"><motion.img className="hero" drag dragConstraints={{ top: -50,
+      left: -50,
+      right: 50,
+      bottom: 50,}} src={banner} alt="imag" /></button>
         </div>
       </div>
     </div>
