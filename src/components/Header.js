@@ -10,10 +10,10 @@ const Header = () => {
     <div className="row">
       <div className="col-12">
          {/* Logo */}
-        <h1><a href="/" id="logo">Animated Beauty</a></h1>
+        <h1><a href="/anim" id="logo">Animated Beauty</a></h1>
          {/* Nav */}
         <nav id="nav">
-          <a href="/">Homepage</a>
+          <a href="/anim">Homepage</a>
           <a href="/threecolumn.html">Three Column</a>
           <a href="/twocolumn1.html">Two Column #1</a>
           <a href="/twocolumn2.html">Two Column #2</a>
@@ -28,7 +28,7 @@ const Header = () => {
         <div className="col-6 col-12-medium">
           {/* Banner Copy */}
           <p>We do something really useful, important, and unique. Learn all about it here ...</p>
-          <a href="/" className="button-large">Go on, click me!</a>
+          <a href="/anim" className="button-large">Go on, click me!</a>
         </div>
         <div className="col-6 col-12-medium imp-medium">
           {/* Banner Image */}

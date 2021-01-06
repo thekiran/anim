@@ -1457,11 +1457,28 @@ input, select, textarea {
 
 	.bordered-feature-image {
 		display: block;
-		/* background: #000 url("images/bg04.png"); */
-		padding: 5px;
-		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
-		margin: 0 0 1.5em 0;
+		/* background: rgb(0, 0, 0); */
+		/* box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15); */
+		/* margin: 0 0 1.5em 0; */
+		margin: 0 0 3em 0em;
 		outline: 0;
+		border-radius: 10%; 
+	}
+	.bordered-feature-image img {
+		display: block;
+		width: 150px;
+		height: 150px;
+		object-fit: contain;
+		margin: 0 auto;
+		padding: 0 0 25px 0;
+		/* background: rgba(255, 255, 255, 0.6); */
+		/* background: rgba(0,0,0, 0); */
+
+			/* cursor: move; fallback if grab cursor is unsupported */
+			/* cursor: grab;
+			cursor: -moz-grab;
+			cursor: -webkit-grab; */
+	
 	}
 
 		.bordered-feature-image img.hero {
@@ -1473,26 +1490,15 @@ input, select, textarea {
 			padding: 0 1em 0 0;
 			border-radius: 0%;
 
+			background: rgb(0, 0, 0);
+	
 				cursor: move; /* fallback if grab cursor is unsupported */
 				cursor: grab;
 				cursor: -moz-grab;
 				cursor: -webkit-grab;
 		
 		}
-		.bordered-feature-image img {
-			display: block;
-			width: 100%;
-			height: 100%;
-			object-fit: contain;
-			margin: 0 0em;
-			border-radius: 20%;
-				/* cursor: move; fallback if grab cursor is unsupported */
-				/* cursor: grab;
-				cursor: -moz-grab;
-				cursor: -webkit-grab; */
-		
-		}
-
+	
 	.button-large {
 		background-image: -moz-linear-gradient(top, #ed391b, #ce1a00);
 		background-image: -webkit-linear-gradient(top, #ed391b, #ce1a00);
@@ -1509,7 +1515,7 @@ input, select, textarea {
 		padding: 0 45px;
 		outline: 0;
 		border-radius: 10px;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+		/* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15); */
 		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
 	}
 
@@ -1537,8 +1543,8 @@ input, select, textarea {
 		position: relative;
 		/* background: #3B4346 url("images/bg01.jpg"); */
 		background: inherit;
-		border-bottom: solid 1px #272d30;
-		box-shadow: inset 0px -1px 0px 0px #51575a;
+		/* border-bottom: solid 1px #272d30; */
+		/* box-shadow: inset 0px -1px 0px 0px #51575a; */
 		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 	}
 
@@ -1585,8 +1591,8 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		border-top: solid 1px #222628;
-		box-shadow: inset 0px 1px 0px 0px #3e484a;
+		/* border-top: solid 1px #222628; */
+		/* box-shadow: inset 0px 1px 0px 0px #3e484a; */
 		padding: 35px 0 35px 0;
 		color: #fff;
 	}
@@ -1605,28 +1611,40 @@ input, select, textarea {
 
 /* Features */
 
-	#features {
-		background: #353D40 url("images/bg02.jpg");
-		border-bottom: solid 1px #272e31;
+	#features { 
+		background: rgba(247, 246, 246, 0.842);
+		/* background: #000; */
+		/* border-bottom: solid 1px #272e31; */
 		/* padding: 45px 0 45px 0; */
-		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
-		color: #a0a8ab;
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
+		color: rgb(255, 255, 255);
 	}
 
 		#features h2 {
 			font-size: 1.25em;
-			color: #fff;
+			color: inherit;
+			/* color: rgb(255, 255, 255); */
 			margin: 0 0 0.25em 0;
 		}
 
-		#features a {
-			color: #e0e8eb;
+		#features button {
+			all: unset;
+			color: inherit;
+			/* color: rgb(255, 255, 255);  */
+			/* background: rgba(255, 255, 255, 0.6); */
+			background: inherit;
 		}
 
 		#features strong {
-			color: #fff;
+			/* color: #fff; */
+			color: inherit;
+			/* color: rgb(255, 255, 255); */
 		}
 
+		#features p{
+			color: inherit;
+			/* color: rgb(255, 255, 255); */
+		}
 /* Content */
 
 	#content {

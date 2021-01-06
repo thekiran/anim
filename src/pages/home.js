@@ -23,11 +23,11 @@ const Home = () => {
           >
           <Header />  
           <Features />
+          </div>
           <Content />
           <TwoColLeft />
           <TwoColumnContent />
           <Footer />
-          </div>
           </div>
     )
 }

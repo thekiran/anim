@@ -1,11 +1,13 @@
 import React from 'react'
 
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all';
+// import gsap from 'gsap'
+// import { ScrollTrigger } from 'gsap/all';
+import {motion} from 'framer-motion'
 
-import slack from '../imglg/slacklg.jpg'
-import hors from '../imglg/horslg.jpg'
-import cof from '../imglg/coflg.jpg'
+import slack from '../imglg/cargo/cargolg.svg'
+import hors from '../imglg/globelg/globelg.svg'
+import cof from '../imglg/hand/hand-moneylg.svg'
+import moon from '../imglg/moonlg/moonlg.svg'
 
 const Features = () => {
   React.useEffect(()=>{
@@ -24,8 +26,8 @@ const Features = () => {
     //   }
     // });
 
-    // make the right edge "stick" to the scroll bar. force3D: true improves performance
-    //gsap.set(".skew-on-scroll", {transformOrigin: "right center", force3D: true});
+   // make the right edge "stick" to the scroll bar. force3D: true improves performance
+    // gsap.set(".skew-on-scroll", {transformOrigin: "right center", force3D: true});
 
   },[])
  
@@ -37,8 +39,13 @@ const Features = () => {
     <div className="row">
       <div className="col-3 col-6-medium col-12-small">
         {/* Feature #1 */}
-        <section>
-          <a href="/" className="bordered-feature-image"><img className="skew-on-scroll" src={slack} alt="imag" /></a>
+        <section style={{color:'#000'}}> 
+          <motion.button
+           whileHover={{
+            scale: 1.2,
+            // transition: { duration: .1 },
+          }}
+          className="bordered-feature-image"><img className="skew-on-scroll" src={slack} alt="imag" /></motion.button>
           <h2>Welcome to Halcyonic</h2>
           <p>
             This is <strong>Halcyonic</strong>, a free site template
@@ -51,7 +58,12 @@ const Features = () => {
       <div className="col-3 col-6-medium col-12-small">
         {/* Feature #2 */}
         <section>
-          <a href="/" className="bordered-feature-image"><img src={hors} className="skew-on-scroll" alt="imag" /></a>
+          <motion.button
+           whileHover={{
+            scale: .7,
+            rotateZ:-360,
+            transition: { duration: .4 },
+          }} className="bordered-feature-image"><img src={hors} className="skew-on-scroll" alt="imag" /></motion.button>
           <h2>Responsive You Say?</h2>
           <p>
             Yes! Halcyonic is built to be fully responsive so it looks great
@@ -62,7 +74,11 @@ const Features = () => {
       <div className="col-3 col-6-medium col-12-small">
         {/* Feature #3 */}
         <section>
-          <a href="/" className="bordered-feature-image"><img src={cof} className="skew-on-scroll" alt="imag" /></a>
+          <motion.button
+           whileHover={{
+            scale: 1.2,
+            // transition: { duration: .1 },
+          }} className="bordered-feature-image"><img src={cof} className="skew-on-scroll" alt="imag" /></motion.button>
           <h2>License Info</h2>
           <p>
             Halcyonic is licensed under the <a href="http://html5up.net/license">CCA</a> license,
@@ -74,7 +90,12 @@ const Features = () => {
       <div className="col-3 col-6-medium col-12-small">
         {/* Feature #4 */}
         <section>
-          <a href="/" className="bordered-feature-image"><img src="/images/pic04.jpg" className="skew-on-scroll" alt="Suspendisse" /></a>
+          <motion.button
+           whileHover={{
+            scale: .7,
+            rotateZ:-360,
+            transition: { duration: .4 },
+          }} className="bordered-feature-image"><img src={moon} className="skew-on-scroll" alt="Suspendisse" /></motion.button>
           <h2>Volutpat etiam aliquam</h2>
           <p>
             Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse
