@@ -1,11 +1,11 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import banner from '../images/cam.jpg'
+import banner from '../imglg/manlg.svg'
 
 const Header = () => {
     return (
-<section style={{background:'rgba(0,0,0,0)'}} id="header">
+<section style={{background:'rgba(0,0,0,0.7)'}} id="header">
   <div className="container">
     <div className="row">
       <div className="col-12">
@@ -14,10 +14,10 @@ const Header = () => {
          {/* Nav */}
         <nav id="nav">
           <a href="/anim">Homepage</a>
-          <a href="/threecolumn.html">Three Column</a>
-          <a href="/twocolumn1.html">Two Column #1</a>
-          <a href="/twocolumn2.html">Two Column #2</a>
-          <a href="/onecolumn.html">One Column</a>
+          <a href="/">Three Column</a>
+          <a href="/">Two Column #1</a>
+          <a href="/">Two Column #2</a>
+          <a href="/">One Column</a>
         </nav>
       </div>
     </div>
@@ -32,10 +32,10 @@ const Header = () => {
         </div>
         <div className="col-6 col-12-medium imp-medium">
           {/* Banner Image */}
-          <button style={{margin:'0px 5px 5px 150px'}} className="bordered-feature-image"><motion.img className="hero" drag dragConstraints={{ top: -50,
-      left: -50,
-      right: 50,
-      bottom: 50,}} src={banner} alt="imag" /></button>
+          <button style={{margin:'0px 5px 5px 150px'}} className="bordered-feature-image"><motion.img className="hero" drag dragConstraints={{ top: -10,
+      left: -10,
+      right: 10,
+      bottom: 10,}} src={banner} alt="imag" /></button>
         </div>
       </div>
     </div>

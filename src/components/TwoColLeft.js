@@ -1,6 +1,6 @@
 import React from 'react'
 
-import gsap,{Elastic,Power0} from 'gsap'
+import gsap,{Power0} from 'gsap'
 
 const TwoColLeft = () => {
     React.useEffect(()=>{
@@ -39,7 +39,7 @@ const TwoColLeft = () => {
             opacity:0,
             scale:0,
             // ease: Elastic.easeInOut,
-            // delay:1
+            delay:.5
         })
 
        
@@ -140,7 +140,7 @@ const TwoColLeft = () => {
                                         justo imperdiet vel. Proin nec dictum mi. Duis commodo enim non tellus interdum
                                         iaculis. Phasellus ultrices diam sit amet orci lacinia sed consequat dui auctor.
             </p>
-                                    <p>
+                                    <p className="side-content">
                                         Sed faucibus viverra ligula, non varius magna semper vitae. Donec eu justo ut ipsum
                                         hendrerit congue nec eu risus. Cum sociis natoque penatibus et magnis dis parturient
                                         montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing

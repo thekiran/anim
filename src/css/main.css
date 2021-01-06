@@ -1466,12 +1466,13 @@ input, select, textarea {
 	}
 	.bordered-feature-image img {
 		display: block;
-		width: 150px;
-		height: 150px;
+		width: 100px;
+		height: 100px;
 		object-fit: contain;
-		margin: 0 auto;
+		margin: 3em auto 2em auto;
 		padding: 0 0 25px 0;
-		/* background: rgba(255, 255, 255, 0.6); */
+
+		background: rgb(8,8);
 		/* background: rgba(0,0,0, 0); */
 
 			/* cursor: move; fallback if grab cursor is unsupported */
@@ -1483,14 +1484,14 @@ input, select, textarea {
 
 		.bordered-feature-image img.hero {
 			display: block;
-			width: 100%;
+			width: 300px;
 			height: 250px;
 			object-fit: contain;
-			margin: 1.5em 0em 0 1.5em;
+			margin: 1.5em 0em 0 4em;
 			padding: 0 1em 0 0;
-			border-radius: 0%;
+			border-radius: 10%;
 
-			background: rgb(0, 0, 0);
+			background: rgb(252, 252, 252);
 	
 				cursor: move; /* fallback if grab cursor is unsupported */
 				cursor: grab;
@@ -1612,8 +1613,8 @@ input, select, textarea {
 /* Features */
 
 	#features { 
-		background: rgba(247, 246, 246, 0.842);
-		/* background: #000; */
+		/* background: rgba(247, 246, 246, 0.842); */
+		background: rgb(8, 8, 8);
 		/* border-bottom: solid 1px #272e31; */
 		/* padding: 45px 0 45px 0; */
 		text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
@@ -1625,25 +1626,27 @@ input, select, textarea {
 			color: inherit;
 			/* color: rgb(255, 255, 255); */
 			margin: 0 0 0.25em 0;
+			color: rgb(255, 255, 255); 
 		}
 
 		#features button {
 			all: unset;
-			color: inherit;
-			/* color: rgb(255, 255, 255);  */
-			/* background: rgba(255, 255, 255, 0.6); */
+			/* color: inherit; */
+			background: rgb(255, 255, 255);
 			background: inherit;
+			color: rgb(255, 255, 255); 
 		}
 
 		#features strong {
 			/* color: #fff; */
 			color: inherit;
-			/* color: rgb(255, 255, 255); */
+			color: rgb(255, 255, 255);
 		}
 
 		#features p{
 			color: inherit;
-			/* color: rgb(255, 255, 255); */
+			color: rgb(255, 255, 255);
+			padding-bottom: 50px;
 		}
 /* Content */
 
