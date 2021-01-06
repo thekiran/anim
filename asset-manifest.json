@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/animated-Beauty/static/css/main.1eb61730.chunk.css",
-    "main.js": "/animated-Beauty/static/js/main.8cfbd976.chunk.js",
-    "main.js.map": "/animated-Beauty/static/js/main.8cfbd976.chunk.js.map",
+    "main.css": "/animated-Beauty/static/css/main.08e6f902.chunk.css",
+    "main.js": "/animated-Beauty/static/js/main.f60fbd2c.chunk.js",
+    "main.js.map": "/animated-Beauty/static/js/main.f60fbd2c.chunk.js.map",
     "runtime-main.js": "/animated-Beauty/static/js/runtime-main.a167fcac.js",
     "runtime-main.js.map": "/animated-Beauty/static/js/runtime-main.a167fcac.js.map",
-    "static/js/2.58619460.chunk.js": "/animated-Beauty/static/js/2.58619460.chunk.js",
-    "static/js/2.58619460.chunk.js.map": "/animated-Beauty/static/js/2.58619460.chunk.js.map",
+    "static/js/2.cc38a27f.chunk.js": "/animated-Beauty/static/js/2.cc38a27f.chunk.js",
+    "static/js/2.cc38a27f.chunk.js.map": "/animated-Beauty/static/js/2.cc38a27f.chunk.js.map",
     "index.html": "/animated-Beauty/index.html",
-    "static/css/main.1eb61730.chunk.css.map": "/animated-Beauty/static/css/main.1eb61730.chunk.css.map",
-    "static/js/2.58619460.chunk.js.LICENSE.txt": "/animated-Beauty/static/js/2.58619460.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/animated-Beauty/static/media/darbg.3c3c841c.jpg"
+    "static/css/main.08e6f902.chunk.css.map": "/animated-Beauty/static/css/main.08e6f902.chunk.css.map",
+    "static/js/2.cc38a27f.chunk.js.LICENSE.txt": "/animated-Beauty/static/js/2.cc38a27f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/animated-Beauty/static/media/bg2.66e23799.jpg",
+    "static/media/cam.26483cf7.jpg": "/animated-Beauty/static/media/cam.26483cf7.jpg",
+    "static/media/coflg.ceda4bfc.jpg": "/animated-Beauty/static/media/coflg.ceda4bfc.jpg",
+    "static/media/horslg.3dbf731d.jpg": "/animated-Beauty/static/media/horslg.3dbf731d.jpg",
+    "static/media/main.css": "/animated-Beauty/static/media/mobileUI-site-nav-opener-bg.fe6d4bd4.svg",
+    "static/media/slacklg.6c39d001.jpg": "/animated-Beauty/static/media/slacklg.6c39d001.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a167fcac.js",
-    "static/js/2.58619460.chunk.js",
-    "static/css/main.1eb61730.chunk.css",
-    "static/js/main.8cfbd976.chunk.js"
+    "static/js/2.cc38a27f.chunk.js",
+    "static/css/main.08e6f902.chunk.css",
+    "static/js/main.f60fbd2c.chunk.js"
   ]
 }
