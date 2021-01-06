@@ -1,23 +1,51 @@
 import React from 'react'
 
-import gsap,{Power0} from 'gsap'
+import gsap,{Elastic,Power0} from 'gsap'
 
 const TwoColLeft = () => {
     React.useEffect(()=>{
-        gsap.from(".sidebar-left",{
+        // gsap.from(".sidebar-left",{
+        //     scrollTrigger:{
+        //         trigger :".sidebar-left" ,
+        //         // pin:true
+        //     }, 
+        //     x:-100,
+        //     duration:.5,
+        //     opacity:0,
+        //     scale:0,
+        //     ease: Power0.easeOut
+        // })
+        gsap.from(".side-title",{
             scrollTrigger:{
-                trigger :".sidebar-left" ,
+                trigger :".left-two" ,
                 // pin:true
             }, 
-            x:-100,
+            x:300,
+            y:100,
             duration:.5,
             opacity:0,
             scale:0,
-            ease: Power0.easeOut
+            // ease: Elastic.easeInOut,
+            // delay:1
         })
+        gsap.from(".side-content",{
+            scrollTrigger:{
+                trigger :".left-two" ,
+                // pin:true
+            }, 
+            // x:300,
+            y:200,
+            duration:.5,
+            opacity:0,
+            scale:0,
+            // ease: Elastic.easeInOut,
+            // delay:1
+        })
+
+       
         gsap.from(".left-one",{
             scrollTrigger:{
-                trigger :".sidebar-left" ,
+                trigger :".left-two" ,
                 // pin:true
             }, 
             x:-200,
@@ -28,7 +56,7 @@ const TwoColLeft = () => {
 
         gsap.from(".left-two",{
             scrollTrigger:{
-                trigger :".sidebar-left" ,
+                trigger :".left-two" ,
                 // pin:true
             }, 
             x:-200,
@@ -82,10 +110,10 @@ const TwoColLeft = () => {
                                 {/* Main Content */}
                                 <section>
                                     <header>
-                                        <h2>Two Column #2</h2>
-                                        <h3>Another generic two column layout</h3>
+                                        <h2 className="side-title">Magna Phasellus</h2>
+                                        <h3 className="side-title">Another generic two column layout</h3>
                                     </header>
-                                    <p>
+                                    <p className="side-content">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam metus, congue
                                         vel suscipit ut, dignissim non risus. Vestibulum ante est, fringilla nec placerat
                                         eu, vestibulum vitae diam. Integer eget egestas eros. Duis enim erat, mollis quis
@@ -93,7 +121,7 @@ const TwoColLeft = () => {
                                         sagittis in eleifend at, mattis imperdiet velit. Donec urna risus, rutrum molestie
                                         varius ac, lacinia sit amet augue. Nam ultrices elementum eros.
             </p>
-                                    <p>
+                                    <p className="side-content">
                                         Sed faucibus viverra ligula, non varius magna semper vitae. Donec eu justo ut ipsum
                                         hendrerit congue nec eu risus. Cum sociis natoque penatibus et magnis dis parturient
                                         montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -104,7 +132,7 @@ const TwoColLeft = () => {
                                         lacinia dui adipiscing risus eleifend tincidunt. Proin eu mauris eu tellus eleifend
                                         hendrerit.
             </p>
-                                    <p>
+                                    <p className="side-content">
                                         Mauris sit amet tellus urna. In facilisis, tortor vitae ultricies egestas, odio
                                         mi rhoncus arcu, quis euismod felis felis et velit. Mauris varius consectetur erat
                                         egestas tempus. Cras convallis odio sit amet risus convallis porttitor. Integer
@@ -123,7 +151,7 @@ const TwoColLeft = () => {
                                         lacinia dui adipiscing risus eleifend tincidunt. Proin eu mauris eu tellus eleifend
                                         hendrerit.
             </p>
-                                    <p>
+                                    <p className="side-content">
                                         Mauris sit amet tellus urna. In facilisis, tortor vitae ultricies egestas, odio
                                         mi rhoncus arcu, quis euismod felis felis et velit. Mauris varius consectetur erat
                                         egestas tempus. Cras convallis odio sit amet risus convallis porttitor. Integer

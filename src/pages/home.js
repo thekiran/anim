@@ -21,8 +21,8 @@ const Home = () => {
         />
           <div className="content" //style={{transform:`translateY(${offsetY * 0.1}px)`}}
           >
-          <Header />  
-          <Features />
+                <Header />  
+                <Features />
           </div>
           <Content />
           <TwoColLeft />
