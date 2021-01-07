@@ -39,7 +39,8 @@ const TwoColLeft = () => {
             opacity:0,
             scale:0,
             // ease: Elastic.easeInOut,
-            delay:.5
+            delay:.5,
+            stagger:0.5
         })
 
        

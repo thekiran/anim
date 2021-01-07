@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import gsap from 'gsap'
+import gsap from 'gsap'
 // import { ScrollTrigger } from 'gsap/all';
 import {motion} from 'framer-motion'
 
@@ -28,7 +28,8 @@ const Features = () => {
 
    // make the right edge "stick" to the scroll bar. force3D: true improves performance
     // gsap.set(".skew-on-scroll", {transformOrigin: "right center", force3D: true});
-
+    gsap.from(".feat-cont",{ scrollTrigger:".feat-cont", y:300,stagger:0.1,duration:.5})
+ 
   },[])
  
     return (
@@ -47,7 +48,7 @@ const Features = () => {
           }}
           className="bordered-feature-image"><img className="skew-on-scroll" src={slack} alt="imag" /></motion.button>
           <h2>Welcome to Halcyonic</h2>
-          <p>
+          <p className="feat-cont">
             This is <strong>Halcyonic</strong>, a free site template
             by <a href="http://twitter.com/ajlkn">AJ</a> for
             <a href="http://html5up.net">HTML5 UP</a>. It's responsive,
@@ -65,7 +66,7 @@ const Features = () => {
             transition: { duration: .4 },
           }} className="bordered-feature-image"><img src={hors} className="skew-on-scroll" alt="imag" /></motion.button>
           <h2>Responsive You Say?</h2>
-          <p>
+          <p className="feat-cont">
             Yes! Halcyonic is built to be fully responsive so it looks great
             at every screen size, from desktops to tablets to mobile phones.
           </p>
@@ -80,7 +81,7 @@ const Features = () => {
             // transition: { duration: .1 },
           }} className="bordered-feature-image"><img src={cof} className="skew-on-scroll" alt="imag" /></motion.button>
           <h2>License Info</h2>
-          <p>
+          <p className="feat-cont">
             Halcyonic is licensed under the <a href="http://html5up.net/license">CCA</a> license,
             so use it for personal/commercial use as much as you like (just keep
             our credits intact).
@@ -97,7 +98,7 @@ const Features = () => {
             transition: { duration: .4 },
           }} className="bordered-feature-image"><img src={moon} className="skew-on-scroll" alt="Suspendisse" /></motion.button>
           <h2>Volutpat etiam aliquam</h2>
-          <p>
+          <p className="feat-cont">
             Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse
             eu varius nibh. Suspendisse vitae magna mollis.
           </p>

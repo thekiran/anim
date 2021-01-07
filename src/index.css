@@ -23,6 +23,17 @@
     opacity: 0.8;
     /* transform: translateY(400px); */
 }
+#head-p{
+    overflow: hidden;
+}
+span{
+    display: inline-block; 
+    /* margin: 0 10px; */
+}
+span.head-cont{ 
+    margin: 0 10px;
+    
+}
 
 .content{
     z-index: 10;
