@@ -7,7 +7,7 @@ import banner from '../imglg/manlg.svg'
 const Header = () => {
   React.useEffect(()=>{
     gsap.from(".head-cont",{y:300,stagger:0.1,duration:1})
-    gsap.from(".head-cont-banner",{y:300,stagger:0.1,duration:2})
+    gsap.from(".head-cont-banner",{y:300,stagger:0.5,duration:2})
     gsap.from(".head-logo",{scale:0,stagger:0.1,duration:2,
       // ease:Elastic.easeInOut
     })
@@ -58,7 +58,7 @@ id="header">
         </div>
         <div style={{overflow:"hidden"}} className="col-6 col-12-medium imp-medium">
           {/* Banner Image */}
-          <button style={{margin:'0px 5px 5px 150px'}} className="bordered-feature-image head-cont-banner"><motion.img className="hero" drag dragConstraints={{ top: -10,
+          <button style={{margin:'0px 5px 5px 150px'}} className="bordered-feature-image head-cont-banner"><motion.img className="hero head-cont-banner" drag dragConstraints={{ top: -10,
       left: -10,
       right: 10,
       bottom: 10,}} src={banner} alt="imag" /></button>

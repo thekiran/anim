@@ -8,12 +8,12 @@
     z-index: 1;
 }
 .main{
-    background-image: url('./img/bg.jpg');
+    /* background-image: url('./img/bg.jpg'); */
     display: block;
 	/* background: url('./img/bg.jpg') repeat !important;
     background-color: rgba(0,0,0, 0.9) !important;
     background-blend-mode: lighten; */
-    /* background-color: red !important; */
+    background-color: rgb(2, 2, 2) !important;
     position: absolute;
     top: 0;
     left: 0;
