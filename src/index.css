@@ -60,3 +60,21 @@ span.head-cont{
 .pin3{
     /* left: 200%; */
 }
+.feature{
+    /* background: red; */
+    padding: 2em;
+    width: 1100px;
+    
+}
+.feature section{
+   display: flex;
+   align-items: center;
+   /* background: #000; */
+   background: inherit;
+}
+.feature section .mar{
+  /* background: red; */
+  margin: 50px 0 0 150px;
+  padding: 20px 0 0 0;
+  font-size: 25px;
+}

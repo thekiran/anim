@@ -6,16 +6,25 @@ import banner from '../imglg/manlg.svg'
 
 const Header = () => {
   React.useEffect(()=>{
-    gsap.from(".head-cont",{y:300,stagger:0.1,duration:1})
-    gsap.from(".head-cont-banner",{y:300,stagger:0.5,duration:2})
+    gsap.from(".head-cont",{y:300,color:"#000",stagger:0.1,duration:.5})
+    gsap.from(".head-cont-banner",{y:300,stagger:0.5,duration:.5})
     gsap.from(".head-logo",{scale:0,stagger:0.1,duration:2,
       // ease:Elastic.easeInOut
     })
+    
   },[])
+  const head = React.useCallback(node=>{
+    if(node !== null){
+      setTimeout(() => {
+        // console.log('rem',node)
+      node.classList.remove('act')
+      }, 1000);
+    }
+  })
     return (
 <section 
 //style={{background:'rgba(0,0,0,0.7)'}} 
-id="header">
+id="header" className="act" ref={head}>
   <div className="container n">
     <div className="row">
       <div className="col-12">
@@ -24,10 +33,10 @@ id="header">
          {/* Nav */}
         <nav id="nav">
           <a href="/anim">Homepage</a>
-          <a href="/">Three Column</a>
-          <a href="/">Two Column #1</a>
-          <a href="/">Two Column #2</a>
-          <a href="/">One Column</a>
+          <a href='/anim'>Three Column</a>
+          <a href='/anim'>Two Column #1</a>
+          <a href='/anim'>Two Column #2</a>
+          <a href='/anim'>One Column</a>
         </nav>
       </div>
     </div>

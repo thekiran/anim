@@ -5,7 +5,7 @@ import Features from '../components/Features'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import TwoColLeft from '../components/TwoColLeft'
-import TwoColumnContent from '../components/TwoColumnContent'
+// import TwoColumnContent from '../components/TwoColumnContent'
 const Home = () => {
 	//  const [offsetY, setOffsetY] = React.useState(0)
   // const handleScroll = () => setOffsetY(window.pageYOffset) 
@@ -26,7 +26,7 @@ const Home = () => {
           </div>
           <Content />
           <TwoColLeft />
-          <TwoColumnContent />
+          {/* <TwoColumnContent /> */}
           <Footer />
           </div>
     )
