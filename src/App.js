@@ -14,9 +14,11 @@ const App = ({hideLoader}) => {
   },
   [ hideLoader ])
   return (
+    <React.Fragment>  
     <div className="App"> 
         <Home />
     </div>
+    </React.Fragment>
   );
 }
 

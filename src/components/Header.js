@@ -6,30 +6,35 @@ import banner from '../imglg/manlg.svg'
 
 const Header = () => {
   React.useEffect(()=>{
-    gsap.from(".head-cont",{y:300,color:"#000",stagger:0.1,duration:.5})
-    gsap.from(".head-cont-banner",{y:300,stagger:0.5,duration:.5})
-    gsap.from(".head-logo",{scale:0,stagger:0.1,duration:2,
-      // ease:Elastic.easeInOut
-    })
-    
-  },[])
-  const head = React.useCallback(node=>{
-    if(node !== null){
-      setTimeout(() => {
-        // console.log('rem',node)
-      node.classList.remove('act')
-      }, 1000);
-    }
+    anim()
   })
+  const head = React.useRef(null)
+  const anim = () => {
+    gsap.fromTo(".head-cont",{y:300,stagger:0.1,duration:.5,opacity:1},{y:0,duration:.5,stagger:0.1,opacity:1})
+    gsap.from(".head-cont-banner",{y:300,stagger:0.5,duration:.5})
+    gsap.from(".head-logo",{scale:0,stagger:0.1,duration:2 }) 
+    
+    // gsap.to(".head-cont",{opacity:1})
+  }
+  // const head = React.useCallback(node=>{
+  //   if(node !== null){
+  //     setTimeout(() => {
+  //       // console.log('rem',node)
+  //     node.classList.remove('act')
+  //     }, 3000);
+  //   }
+  // })
     return (
 <section 
 //style={{background:'rgba(0,0,0,0.7)'}} 
-id="header" className="act" ref={head}>
+id="header" 
+// className="act"ref={head}
+ >
   <div className="container n">
     <div className="row">
       <div className="col-12">
          {/* Logo */}
-        <h1><a href="/anim" id="logo"> <span className="head-logo">Animated</span> <span className="head-logo">Beauty</span> </a></h1>
+        <h1><a href="/anim" id="logo"> <span ref={head} className="head-logo">Animated</span> <span className="head-logo">Beauty</span> </a></h1>
          {/* Nav */}
         <nav id="nav">
           <a href="/anim">Homepage</a>

@@ -32,7 +32,7 @@ span{
 }
 span.head-cont{ 
     margin: 0 10px;
-    
+    opacity: 0;
 }
 
 .content{
