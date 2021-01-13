@@ -32,8 +32,18 @@ span{
 }
 span.head-cont{ 
     margin: 0 10px;
-    opacity: 0;
+    /* opacity: 0; */
+    /* background: rgba(0, 0, 0, 1); */
+    font-size: 1.1em;
+    font-weight: 600;
+	font-family: 'Poppins', sans-serif; 
 }
+/* div.head-cont{ 
+    margin: 0 10px;
+    opacity: 0;
+    background: rgb(255, 0, 0);
+    display: inline-block;
+} */
 
 .content{
     z-index: 10;
@@ -77,4 +87,39 @@ span.head-cont{
   margin: 50px 0 0 150px;
   padding: 20px 0 0 0;
   font-size: 25px;
+}
+
+/* #svg{
+    fill: "#fff";
+    font-size: 30px;
+}
+#text{
+    fill: "#fff";
+    font-size: 30px;
+    
+} */
+
+/* <svg height="20" width="20">
+                      <text x="0" y="0" fill="red" id="text">We</text>
+</svg> */
+
+.button-large{
+    /* display: inline-block; */
+    transition: all 100ms ease-out;
+    /* border: none !important; */
+    outline: none !important;
+    /* box-shadow: 0 0 15px rgb(255, 2, 2); */
+    font-size: 1.4em;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border: solid 1px rgb(255, 255, 255);
+}
+.button-large:hover{
+    background: rgba(0, 0, 0, 0.493);
+    color: #fff;
+    /* background: #fff; */
+    /* color: #000; */
+    box-shadow: 0 0 9px #ffffff; 
+    transform: scale(110%);
+    border:  solid 1px rgba(255, 255, 255, 0)
 }

@@ -82,8 +82,8 @@ const Features = () => {
                 <motion.button
                   whileHover={{
                     scale: .7,
-                    rotateZ: -360,
-                    transition: { duration: .4 },
+                    rotateZ: -130,
+                    transition: { duration: .2 },
                   }} className="bordered-feature-image"><img src={moon} className="skew-on-scroll-t " alt="Suspendisse" /></motion.button>
                 <div className="mar">
                   <h2>Volutpat etiam aliquam</h2>

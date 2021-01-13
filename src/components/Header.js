@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{SVGComponent} from 'react'
 import {motion} from 'framer-motion'
 import gsap,{Elastic} from 'gsap'
 
 import banner from '../imglg/manlg.svg'
+
+import we from './hero-banner/we.svg'
 
 const Header = () => {
   React.useEffect(()=>{
@@ -10,7 +12,7 @@ const Header = () => {
   })
   const head = React.useRef(null)
   const anim = () => {
-    gsap.fromTo(".head-cont",{y:300,stagger:0.1,duration:.5,opacity:1},{y:0,duration:.5,stagger:0.1,opacity:1})
+    gsap.from(".head-cont",{y:200,duration:.1,stagger:0.1,})
     gsap.from(".head-cont-banner",{y:300,stagger:0.5,duration:.5})
     gsap.from(".head-logo",{scale:0,stagger:0.1,duration:2 }) 
     
@@ -52,7 +54,9 @@ id="header"
         <div className="col-6 col-12-medium">
           {/* Banner Copy */}
           <p id="head-p">
-           <span className="head-cont">We </span> 
+           <span className="head-cont">  
+           We
+            </span> 
            <span className="head-cont">do </span> 
            <span className="head-cont">something </span> 
            <span className="head-cont">really </span> 
