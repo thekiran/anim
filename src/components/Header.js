@@ -2,7 +2,8 @@ import React,{SVGComponent} from 'react'
 import {motion} from 'framer-motion'
 import gsap,{Elastic} from 'gsap'
 
-import banner from '../imglg/manlg.svg'
+import banner from '../imglg/main_illustration.png'
+import people from '../imglg/main_people.png'
 
 import we from './hero-banner/we.svg'
 
@@ -31,13 +32,16 @@ const Header = () => {
 //style={{background:'rgba(0,0,0,0.7)'}} 
 id="header" 
 // className="act"ref={head}
+className="container-home"
  >
-  <div className="container n">
-    <div className="row">
+  {/* <div className="container n"> */}
+     {/*<div className="row">
       <div className="col-12">
-         {/* Logo */}
-        <h1><a href="/anim" id="logo"> <span ref={head} className="head-logo">Animated</span> <span className="head-logo">Beauty</span> </a></h1>
-         {/* Nav */}
+         Logo 
+        <h1><a href="/anim" id="logo"> <span ref={head} className="head-logo">*/}
+          {/* Animated 
+          </span> <span className="head-logo">Beautify</span> </a></h1>*/}
+         {/* Nav 
         <nav id="nav">
           <a href="/anim">Homepage</a>
           <a href='/anim'>Three Column</a>
@@ -47,11 +51,21 @@ id="header"
         </nav>
       </div>
     </div>
-  </div>
+  </div>*/}
+  <div className="container n">
+  <div className="row ">
+     <h1><a href="/anim" id="logo"><span className="head-logo">Beautify</span> </a></h1>
+     <nav id="nav">
+          <a href="/anim">Login</a>
+          <a href='/anim'>Signup</a>
+        </nav>
+    </div>
+    </div>
+   
   <div id="banner">
-    <div className="container">
+    <div className="container-ban">
       <div className="row">
-        <div className="col-6 col-12-medium">
+        <div className="col-6 col-12-medium cont-ban">
           {/* Banner Copy */}
           <p id="head-p">
            <span className="head-cont">  
@@ -68,21 +82,31 @@ id="header"
            <span className="head-cont">about </span> 
            <span className="head-cont">it here ...</span> 
              </p>
-          <a href="/anim" className="button-large">
+             <div id="banner-cont">
+             <a href="/anim" className="button-large">
             
-           <span className="head-cont">Go on, </span> 
-           <span className="head-cont">click me! </span> 
-            </a>
-        </div>
-        <div style={{overflow:"hidden"}} className="col-6 col-12-medium imp-medium">
-          {/* Banner Image */}
+            <span className="head-cont">Go on, </span> 
+            <span className="head-cont">click me! </span> 
+             </a>
+             <img className="hero head-cont-people" src={people} alt="imag" />
+   
+             </div>
+        
+        </div> 
+          {/* <div style={{overflow:"hidden"}} className="col-6 col-12-medium imp-medium">
+        Banner Image 
           <button style={{margin:'0px 5px 5px 150px'}} className="bordered-feature-image head-cont-banner"><motion.img className="hero head-cont-banner" drag dragConstraints={{ top: -10,
       left: -10,
       right: 10,
       bottom: 10,}} src={banner} alt="imag" /></button>
-        </div>
+        </div>*/}
+         <div style={{overflow:"hidden"}} className="img-hero">
+      
+      <img className="hero head-cont-banner" src={banner} alt="imag" />
       </div>
+      </div> 
     </div>
+  
   </div>
 </section>
     )

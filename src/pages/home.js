@@ -21,14 +21,14 @@ const Home = () => {
         />
           <div className="content" //style={{transform:`translateY(${offsetY * 0.1}px)`}}
           >
-            <nav className="navbar navbar-expand">
+          {/*   <nav className="navbar navbar-expand">
 			<div className="navbar-cont">
 		<a className="navbar-brand" href="#"> Business Landing Pages</a> 
 		<div className="navbar-collapse">
 			<ul className="navbar-nav">
 			<li className="nav-item">
 				<a className="nav-link" href="https://thekiran.github.io/money">Money Trasfer 
-				{/* <span className="sr-only">(current)</span> */}
+				<span className="sr-only">(current)</span> 
 				</a>
 			</li>
 			<li className="nav-item active">
@@ -37,7 +37,7 @@ const Home = () => {
 			</ul> 
 		</div></div>
 		</nav>
-		
+		*/}
                 <Header />  
                 <Features />
           </div>

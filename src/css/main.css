@@ -1556,7 +1556,7 @@ input, select, textarea {
 		/* box-shadow: inset 0px -1px 0px 0px #51575a; */
 		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 		/* background: red; */
-		padding: 2em 0 5em 0;
+		padding: 2em 0 0em 0;
 		/* background-position: center; */
 		/* background-position-x: 500px; */
 		/* background-position-y: -30px; */
@@ -1639,7 +1639,7 @@ input, select, textarea {
 		/* padding: 45px 0 45px 0; */
 		text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
 		color: rgb(255, 255, 255);
-		margin: 3em 0;
+		margin: 1.5em 0;
 	}
 
 		#features h2 {
