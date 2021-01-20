@@ -1,9 +1,34 @@
 import React from 'react'
 
 const Footer = () => {
+    const [obs,setObs] = React.useState('')
+    // let obs = "anim"
+    const observer = React.useRef(
+		new IntersectionObserver(
+			(entries) => {
+				if (entries[0].isIntersecting) {
+					console.log(entries[0])
+                    setObs('')
+				} else {
+                    setObs('anim')
+				}
+			},
+			{
+                root: document.querySelector('.footer-space'),
+				rootMargin: '300px 0px 100px 0px',
+				// threshold: 1
+			}
+		)
+	)
+	// eslint-disable-next-line
+	const rev = React.useCallback((node) => {
+		
+		if(observer.current && node !== null)  observer.current.observe(node)
+	}) 
     return (
         <React.Fragment>
-            <section style={{background:'rgba(0,0,0,0.1)'}} id="footer">
+            <div ref={rev}  className="footer-space"></div>
+            <section className={obs} style={{background:'rgba(0,0,0,0.1)'}} id="footer">
                 <div className="container">
                     <div className="row">
                         <div className="col-8 col-12-medium">
