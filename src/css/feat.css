@@ -1,0 +1,76 @@
+
+/* Features */
+
+#features {  
+    /* background: rgba(247, 246, 246, 0.842); */
+    background: rgba(255, 0, 0, 0);
+    /* border-bottom: solid 1px #272e31; */
+    /* padding: 45px 0 45px 0; */
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
+    color: rgb(255, 255, 255);
+    margin: 1.5em 0;
+    padding: 0 0 15em 0;
+}
+
+    #features h2 {
+        font-size: 1.25em;
+        color: inherit;
+        /* color: rgb(255, 255, 255); */
+        margin: 0 0 0.25em 0;
+        color: rgb(255, 255, 255); 
+    }
+
+    #features button {
+        all: unset;
+        /* color: inherit; */
+        background: rgb(255, 255, 255);
+        background: inherit;
+        color: rgb(255, 255, 255); 
+    }
+
+    #features strong {
+        /* color: #fff; */
+        color: inherit;
+        color: rgb(255, 255, 255);
+    }
+
+    #features p{
+        color: inherit;
+        color: rgb(255, 255, 255);
+        /* padding: 0px; */
+    }
+
+
+
+.feature.first-feat{
+    /* background-color: rgb(209, 82, 82); */
+    height: 50em !important;
+}
+.feature.sec-feat{
+    /* background-color: rgba(87, 37, 37, 0.5); */
+    height: 50em !important;
+}
+
+.feature section{
+    /* background: rgb(0,0,0); */
+    flex-direction: column !important;
+    height: 100%;
+}
+
+.feature section button{
+    height: 300px !important;
+    width: 300px !important; 
+}
+.feature section button img{
+    height: 100%;
+    width: 100%;
+    /* background: red; */
+}
+.mar{
+    padding: 6em 0 3em 0 !important;
+    /* background: red; */
+}
+
+.sec-feat{
+    /* background: red; */
+}

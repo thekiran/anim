@@ -1,70 +1,78 @@
-import React,{SVGComponent} from 'react'
-import {motion} from 'framer-motion'
-import gsap,{Elastic} from 'gsap'
+import React from 'react'
+// import {motion} from 'framer-motion'
+import gsap  from 'gsap'
+ 
+// import { Controller, Scene } from 'react-scrollmagic';
+
 
 import banner from '../imglg/main_illustration.png'
 import people from '../imglg/main_people.png'
 
-import we from './hero-banner/we.svg'
+import '../css/head.css'
 
 const Header = () => {
   React.useEffect(()=>{
     anim()
+    const headHide = (el) => {
+      console.log(el)
+
+      el.trigger.classList.add('anim')
+    }
+    const headShow = (el) => {
+      console.log(el)
+
+      el.trigger.classList.remove('anim')
+    }
+
+
+    let tl = gsap.timeline({
+      scrollTrigger:{
+        trigger:'#header',
+        start:"+=100",
+        end:"bottom center",
+        // markers:true,
+        scrub:true,
+        pin:true,
+        onLeaveBack: headShow,
+        onLeave: headHide,
+        pinSpacing:true
+      }
+    })
+    .to("#head-p",{xPercent:700,yPercent:300,scale:30,opacity:0.1,rotate:45,duration:7},1)
+    .to("#banner-cont",{xPercent:200,yPercent:-100,scale:2,rotate:45,opacity:0.1,duration:3,delay:2},1)
+    // .to("#head-p",{scale:0},1)
+
   })
-  const head = React.useRef(null)
+  // const head = React.useRef(null)
   const anim = () => {
     gsap.from(".head-cont",{y:200,duration:.1,stagger:0.1,})
     gsap.from(".head-cont-banner",{y:300,stagger:0.5,duration:.5})
     gsap.from(".head-logo",{scale:0,stagger:0.1,duration:2 }) 
     
-    // gsap.to(".head-cont",{opacity:1})
   }
-  // const head = React.useCallback(node=>{
-  //   if(node !== null){
-  //     setTimeout(() => {
-  //       // console.log('rem',node)
-  //     node.classList.remove('act')
-  //     }, 3000);
-  //   }
-  // })
+  
     return (
 <section 
-//style={{background:'rgba(0,0,0,0.7)'}} 
+// style={{paddingBottom:'10em'}} 
 id="header" 
 // className="act"ref={head}
 className="container-home"
- >
-  {/* <div className="container n"> */}
-     {/*<div className="row">
-      <div className="col-12">
-         Logo 
-        <h1><a href="/anim" id="logo"> <span ref={head} className="head-logo">*/}
-          {/* Animated 
-          </span> <span className="head-logo">Beautify</span> </a></h1>*/}
-         {/* Nav 
-        <nav id="nav">
-          <a href="/anim">Homepage</a>
-          <a href='/anim'>Three Column</a>
-          <a href='/anim'>Two Column #1</a>
-          <a href='/anim'>Two Column #2</a>
-          <a href='/anim'>One Column</a>
-        </nav>
-      </div>
-    </div>
-  </div>*/}
-  <div className="container n">
-  <div className="row ">
+ > 
+  <div className="nav container n">
+  <div className="row " 
+// style={{paddingBottom:'10em'}} 
+>
      <h1><a href="/anim" id="logo"><span className="head-logo">Beautify</span> </a></h1>
-     <nav id="nav">
+     {/* <nav id="nav">
           <a href="/anim">Login</a>
           <a href='/anim'>Signup</a>
-        </nav>
+        </nav> */}
     </div>
     </div>
    
   <div id="banner">
     <div className="container-ban">
-      <div className="row">
+      <div className="row" id="head-ro">
         <div className="col-6 col-12-medium cont-ban">
           {/* Banner Copy */}
           <p id="head-p">
@@ -88,7 +96,7 @@ className="container-home"
             <span className="head-cont">Go on, </span> 
             <span className="head-cont">click me! </span> 
              </a>
-             <img className="hero head-cont-people" src={people} alt="imag" />
+             {/* <img className="hero head-cont-people" src={people} alt="imag" /> */}
    
              </div>
         
@@ -100,10 +108,10 @@ className="container-home"
       right: 10,
       bottom: 10,}} src={banner} alt="imag" /></button>
         </div>*/}
-         <div style={{overflow:"hidden"}} className="img-hero">
+         {/* <div style={{overflow:"hidden"}} className="img-hero">
       
       <img className="hero head-cont-banner" src={banner} alt="imag" />
-      </div>
+      </div> */}
       </div> 
     </div>
   

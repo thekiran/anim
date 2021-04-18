@@ -15,7 +15,7 @@ const Footer = () => {
 			},
 			{
                 root: document.querySelector('.footer-space'),
-				rootMargin: '300px 0px 100px 0px',
+				rootMargin: '0px 0px -150px 0px',
 				// threshold: 1
 			}
 		)
